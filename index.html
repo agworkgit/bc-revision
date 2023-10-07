@@ -4,17 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Front End Dev - Revision Notes</title>
   </head>
   <body>
     <header id="header">
       <h1>Front End Dev - Revision Notes</h1>
-      <img src="./assets/frontenddev.png" alt="Profile image of primary revision topics." width="25%" height="25%"/>
+      <img src="./assets/frontenddev.png" alt="Profile image of primary revision topics."/>
     </header>
     <main>
+      <div class="top-break"></div>
+      <section class="card" id="explainers">
+        <h2>What does MVP mean?</h2>
+        <p>MVP stands for minimum viable product. This is usually the first iteration of a product without extra features. It's there to prove a solution works.
+        </p>
+        <h2>What does blocker or bottleneck mean?</h2>
+        <p>During development, you may hear the term blocker, which is just another way of saying that you are stuck on a particular problem
+          <br>
+          that is preventing you from moving forward. Another term you may see is bottleneck, which refers to a point in our development process
+          <br>
+          that is slowing down the rest of production.
+        </p>
+        <h2>What does URL mean?</h2>
+        <p>URL is a fundamental web development concept. A URL, or Uniform Resource Locator, is the unique address given to a specific resource on the web. 
+          <br>
+          When we deploy a website and make it available to a user, the user accesses the page via a URL such as "google.com".
+        </p>
+        <h2>What does separation of concerns mean?</h2>
+        <p>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use.
+          <br>
+          It is one of the key design principles that we practice in the boot camp. Separation of concerns is based on the idea that each section
+          <br>
+          of code should have its own responsibility.</p>
+      </section>
+
+      <section class="card" id="computational-thinking">
+        <h2>Computational Thinking</h2>
+        <p>What is mean by computation thinking is the idea of decomposition, abstraction (else), pattern recognition, and testing algorithms (debugging).
+          <br>
+          This helps us to digest easier the larger problem and come up with a solution effectively.
+        </p>
+      </section>
+
+      <section class="card" id="package-managers">
+        <h2>Package Managers</h2>
+        <p>A package contains code written by others that we can add to and use on our computers and in our projects.
+          <br>
+          A package manager, automates the process of installing, upgrading, configuring, and removing packages.</p>
+      </section>
+
+      <section class="card" id="terminal-commands">
+        <h2>Terminal Commands</h2>
+        <p>We use terminal commands to quickly navigate between folders, create folders, create files and easily push updates to GitHub. 
+          <br>
+          Here are a few useful commands to get you started:</p>
+        <ul>
+          <li>pwd - print working (current) directory</li>
+          <li>ls - list files (in the directory)</li>
+          <li>cd (followed by the name) - changes directory</li>
+          <li>cd .. - moves you back on step</li>
+          <li>mkdir (followed by given name)- make directory (folder)</li>
+          <li>touch (followed by name and file type) - creates a file in the directory selected</li>
+          <li>open - will open a specified file in the folder ie: text-file.txt</li>
+          <li>open . - open current folder in a window</li>
+          <li>code . - open current directory in your default code editor</li>
+        </ul>
+      </section>
 
       <section class="card" id="html-section">
         <h2>HTML</h2>
+        <p>Meaning Hyper Text Markup Language is used to add content and structure to our webpage.
+          <br>
+          It is also the language that gives instructions to the browser with meta tags on what language to use,
+          <br>
+          how to display the viewport, keywords for SEO, descirption, author and much more.
+        </p>
         <ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
@@ -23,17 +87,51 @@
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <p>Meaning Cascading Style Sheets.
+          <img src="assets/cssrule.png" class="css-rule">
+          <br>
+          CSS defines the colors, aesthetics, visual layout, and organization.
+          <br>
+          We use CSS to define style rules for specific elements of an HTML page and format them using a wide range of style options.
+          <br>
+          There are three ways to style a webpage using CSS:
+        </p>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>inline CSS, meaning directly in the HTML file</li>
+          <li>internal CSS style sheet, contains CSS rules for the webpage in the head section of the HTML file</li>
+          <li>external CSS style sheet, we link the file using a link element placed in the HTML's head</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
         </ul>
+        <img src="assets/htmlbox.png" class="css-box">
+        <p>* is used as a wildcard selector, with this selector you can add declarations to all the items on your page.</p>
+        <p>Rather than repeating a rule which would add more lines of code and repetition, two or more elements
+          <br>
+          that will share the same styling can be grouped together by using a comma.
+          <br>
+          This helps us write Do Not Repeat Yourself (DRY) code.</p>
+          <p>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code
+            <br>
+            in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase.</p>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <p>An online repository storage server that allows for collaboration, version control, projects and deployment, to showcase your work to potential employers.
+          <br>
+          Push means upload, pull means download.
+          <br>
+          GitHub connects to a secure shell or SSH that can store your credentials to quickly send changes to your account via terminal commands.</p>
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
         </ul>
+        <br>
+        <h2>GitHub's Issues</h2>
+        <p>Performs the function of a task manager, we give it clear user stories and acceptance criteria and work thorough the list until the project is complete and we have an MVP.</p>
+        <br>
+        <h2>GitHub's Pull Request</h2>
+        <p>A pull request, or PR, is used to merge a comparison branch (in our case, the feature branch) into the base branch.</p>        
       </section>
    
       <section class="card" id="javascript-section">
@@ -43,10 +141,25 @@
         </ul>
       </section>
 
+      <section class="card" id="debudding-section">
+        <h2>Debugging</h2>
+        <p>Debugging is one of the most important parts of the development process. Every day, developers notice errors and review code that isn't working.
+          <br>
+          It's important to get into the mindset that errors and mistakes are gifts. They tell us when something is wrong, and if we can stay curious,
+          <br>we can figure out what is happening and learn something new.</p>
+          <ul>
+          <li>Plan ahead on understanding where your code will be used and optimise for every user and device.</li>
+          <li>You can use a browser's console to inspect and make temporary changes that can later be commited to your working files.</li>
+          <li>It's recommended to get feedback from the user that encountered the bug and try to replicate their error on your machine step by step to find the bug.</li>
+          <li>If all the other steps have failed, communicate with the user and get them to share their screen so you can observe what is happening.</li>
+          <li>Learn how to use Visual Studio Code's debugging interface as it will save you a huge amount of time when you're going through the process of finding the bug.</li>
+        </ul>
+      </section>
+
     </main>
 
     <footer>
-      <p>Created by Alex Grigore - 2023</p>
+      <p class="signature">Created by Alex Grigore - 2023</p>
     </footer>
   </body>
 </html>

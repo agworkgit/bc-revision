@@ -11,47 +11,103 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-h1,
+h1 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 20px;
+    margin: auto;
+}
+
 h2 {
     font-family: Helvetica, sans-serif;
     text-align: center;
+    font-size: large;
 }
 
 img {
     display: block;
     height: 50%;
     width: 15%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     padding: 15px;
 }
 
+.logo-top {
+    max-width: 100%;
+    min-width: 50%;
+    max-zoom: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+  }
+
 ul {
+    font-family: Helvetica, sans-serif;
     padding-left: 40px;
     font-size: 20px;
 }
 
 p {
     font-family: Helvetica, sans-serif;
+    font-size: medium;
     text-align: left;
     font-size: 20px;
+    margin: auto;
   }
 
   .top-break {
-    margin: 25px;
+    margin: none;
   }
 
-  h1 {
-    padding-top: 25px;
+  .card-starter {
+    background-color: rgb(255, 71, 71);
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 0px;
+    border: 5px solid rgb(253, 36, 36);
+    border-radius: 20px;
+    padding: 30px;
   }
 
-  .card {
+  .card-html {
     background-color: rgb(255, 111, 0);
     width: 80%;
-    margin: 40px auto;
+    margin: 30px auto;
+    margin-top: 0px;
     border: 5px solid rgb(255, 72, 0);
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
+  }
+
+  .card-css {
+    background-color: rgb(48, 172, 255);
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 0px;
+    border: 5px solid rgb(0, 153, 255);
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .card-git {
+    background-color: rgb(153, 153, 153);
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 0px;
+    border: 5px solid rgb(112, 112, 112);
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .card-js {
+    background-color: rgb(255, 215, 84);
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 0px;
+    border: 5px solid rgb(255, 196, 0);
+    border-radius: 20px;
+    padding: 30px;
   }
 
   .css-box {
@@ -66,5 +122,5 @@ p {
 
   .signature {
     text-align: center;
-    font-size: 20px;
+    font-size: medium;
   }

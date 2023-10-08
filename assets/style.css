@@ -11,6 +11,10 @@ footer {
     color: rgb(0, 0, 0);
 }
 
+header {
+    margin-bottom: 20px;
+}
+
 h1 {
     font-family: Helvetica, sans-serif;
     text-align: center;
@@ -22,7 +26,35 @@ h1 {
 h2 {
     font-family: Helvetica, sans-serif;
     text-align: center;
-    font-size: large;
+    font-weight: lighter;
+    font-size: 24px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    border: 10px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: 30px auto;
+    padding: 5px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+h2, p, ul {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 img {
@@ -44,27 +76,29 @@ img {
 
 ul {
     font-family: Helvetica, sans-serif;
-    padding-left: 40px;
-    font-size: 20px;
+    font-size: large;
+    text-align: center;
+    list-style-position: inside;
 }
 
 p {
     font-family: Helvetica, sans-serif;
-    font-size: medium;
-    text-align: left;
+    font-size: large;
+    text-align: center;
     font-size: 20px;
     margin: auto;
   }
 
   .top-break {
-    margin: none;
+    margin: 80px;
   }
 
   .card-starter {
     background-color: rgb(255, 71, 71);
-    width: 80%;
-    margin: 30px auto;
-    margin-top: 0px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border: 5px solid rgb(253, 36, 36);
     border-radius: 20px;
     padding: 30px;
@@ -72,9 +106,10 @@ p {
 
   .card-html {
     background-color: rgb(255, 111, 0);
-    width: 80%;
-    margin: 30px auto;
-    margin-top: 0px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border: 5px solid rgb(255, 72, 0);
     border-radius: 20px;
     padding: 30px;
@@ -82,32 +117,18 @@ p {
 
   .card-css {
     background-color: rgb(48, 172, 255);
-    width: 80%;
-    margin: 30px auto;
-    margin-top: 0px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border: 5px solid rgb(0, 153, 255);
     border-radius: 20px;
     padding: 30px;
   }
 
-  .card-git {
-    background-color: rgb(153, 153, 153);
-    width: 80%;
-    margin: 30px auto;
-    margin-top: 0px;
-    border: 5px solid rgb(112, 112, 112);
-    border-radius: 20px;
-    padding: 30px;
-  }
-
-  .card-js {
-    background-color: rgb(255, 215, 84);
-    width: 80%;
-    margin: 30px auto;
-    margin-top: 0px;
-    border: 5px solid rgb(255, 196, 0);
-    border-radius: 20px;
-    padding: 30px;
+  .css-rule {
+    width: 50%;
+    height: auto;
   }
 
   .css-box {
@@ -115,9 +136,72 @@ p {
     height: auto;
   }
 
-  .css-rule {
+  #css-def {
+    text-align: center;
+  }
+
+  .card-git {
+    background-color: rgb(153, 153, 153);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 5px solid rgb(112, 112, 112);
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .card-js {
+    background-color: rgb(255, 215, 84);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 5px solid rgb(255, 196, 0);
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .js-variable {
     width: 50%;
     height: auto;
+  }
+
+  .card-css, .card-git, .card-html, .card-js, .card-starter {
+    padding-right: 50px;
+  }
+
+  /* max-width represents how the content will respond when resizing down and min-width represents how large the content will be when in desktop full window mode */
+
+  #ex-img, #video-content {
+    max-width: 100%;
+    min-width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+  }
+
+  /* ex-img id adjusts all images */
+
+  #ex-img {
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 30px;
+    padding: 0px;
+    margin: 20px auto;
+    width: 640px;
+    height: 320px;
+  }
+
+  /* video-content controls the layour of videos */
+
+  #video-content {
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 30px;
+    padding: 0px;
+    display: block;
+    margin: 20px auto;
   }
 
   .signature {
